@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap');
+
+/* Colors */
+body, html{
+    height: 95%;
+}
+
+* {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--main-color);
+  color: var(--back-light-color);
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --main-color: #222831;
+  --back-color: #393e46;
+  --back-light-color: #a3a4a5;
+  --back-hover-color: #2d3542;
+  --light-color: #f7c873;
+  --light-hover-color: #c99e4f;
+  --button-hover-color: #d8aa56;
+  --white-color: #eeeeee;
+  --bg-right-color: #626364;
+  --bg-left-color: #393e46;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 50px;
+}
+
+.title_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.title_container > h2, .title_container > p{
+    margin: 4px;
+}
+.title_container > p{
+    font-size: 14px;
+}
+
+.list-item{
+    margin: 10px 0px;
+}
+
+.list-item > a, .list-item > a:not(:hover) {
+    transition: all 0.3s ease;
+    color: var(--light-color);
+    font-size: 20px;
+}
+
+.list-item > a:hover {
+    transition: all 0.3s ease;
+    color: var(--light-hover-color);
+}
+
+.list-item > label {
+    font-size: 16.5px;
+}
+
+.options_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.url{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    font-size: 14px !important;
+    vertical-align: bottom !important;
+    text-align: end !important;
+    letter-spacing: 2px;
+}
