@@ -19,6 +19,8 @@ Final project for the **ITBA Full Stack Developer certification**: a home bankin
 - Database triggers that keep balances consistent:
   - `after_insert_auth_user_cliente` / `after_insert_auth_user_empleado` fill in customer or employee data when a user is created
   - `after_insert_prestamo` / `after_delete_prestamo` update the linked account's balance when a loan is granted or removed
+  - `after_insert_transfer` moves the amount between accounts when a transfer is recorded
+  - Full SQL in [`documentation/triggers.sql`](documentation/triggers.sql)
 - Public pages: home, FAQ and support
 
 ## Project structure
@@ -47,6 +49,8 @@ pip install django djangorestframework django-cors-headers
 python manage.py migrate
 python manage.py runserver
 ```
+
+`backend/beebank.db` ships with sample data and the triggers. On a fresh database, run `documentation/triggers.sql` after migrating.
 
 **Frontend**
 
